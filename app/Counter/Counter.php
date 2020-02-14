@@ -6,9 +6,10 @@ class Counter
 {
     private $counter = 0;
 
-    public function increment() : void
+    public function increment() : Counter
     {
         $this->counter += 1;
+        return $this;
     }
 
     public function count () : int
